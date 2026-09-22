@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chomu Support</title>
+<meta name="description" content="Support and frequently asked questions for the Chomu iOS app.">
+<link rel="icon" href="/logo.png">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .faq{ display: flex; flex-direction: column; gap: 8px; margin-bottom: 44px; }
+  details{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 4px 18px;
+  }
+  summary{
+    cursor: pointer; padding: 14px 0; font-weight: 600; font-size: 15px;
+    list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker{ display:none; }
+  summary::after{ content: '+'; font-family: var(--mono); color: var(--violet); font-size: 18px; flex-shrink: 0; }
+  details[open] summary::after{ content: '\2212'; }
+  details p{ margin: 0 0 16px; color: var(--text-dim); font-size: 14.5px; max-width: 58ch; }
+  .contact-card{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .contact-card h2{ font-family: var(--display); font-weight: 700; font-size: 19px; margin: 0 0 4px; }
+  .contact-card p{ margin: 0; color: var(--text-dim); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="scrubber">
+  <div class="wrap scrubber-top">
+    <a class="brand" href="/">
+      <img src="/logo.png" alt="Chomu">
+      <span>Chomu</span>
+    </a>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <a class="badge-btn" href="#" aria-label="Download on the App Store">
+        <img src="/app-store-badge.svg" alt="Download on the App Store">
+      </a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="scrub-track">
+    <div class="scrub-marks">
+      <a class="scrub-mark" href="/"><span class="lbl">← Back to Chomu</span></a>
+      <a class="scrub-mark" href="/privacy"><span class="lbl">Privacy Policy</span></a>
+      <a class="scrub-mark" href="#top"><span class="lbl">Support</span></a>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile">
+    <a href="/"><span>← Back to Chomu</span></a>
+    <a href="/privacy"><span>Privacy Policy</span></a>
+    <a href="#top"><span>Support</span></a>
+  </nav>
+</header>
+
+<div class="doc-shell" style="grid-template-columns: 1fr; max-width: 760px;" id="top">
+  <main class="doc-main">
+    <div class="gloss"><span class="reading">サポート</span></div>
+    <h1>How can we help?</h1>
+    <p class="lede">Answers to the most common questions about Chomu. Can't find what you need? Email us — we read every message.</p>
+
+    <div class="faq">
+      <details open>
+        <summary>How do I delete my account?</summary>
+        <p>Open the app, go to <strong>Profile → Danger zone</strong>, and tap <strong>Delete account</strong>. Confirm twice and everything — your saved words, progress, streaks, achievements, and your login — is permanently removed. This can't be undone.</p>
+      </details>
+      <details>
+        <summary>Why did my streak reset?</summary>
+        <p>Streaks count consecutive calendar days with at least one clip watched or review completed. If a day passes with no activity, the streak resets the next time you open the app.</p>
+      </details>
+      <details>
+        <summary>A video won't play — what do I do?</summary>
+        <p>Some clips stream directly from YouTube; a poor connection or a video the uploader removed can cause a playback error. Try another clip, then check your connection. If it keeps happening on multiple clips, email us with your device model and iOS version.</p>
+      </details>
+      <details>
+        <summary>How does spaced repetition review work?</summary>
+        <p>Every word you save gets scheduled for review based on how well you remember it — words you know well come back less often, words you struggle with come back sooner. Open the review deck from the <strong>Vocab</strong> tab whenever words are due.</p>
+      </details>
+      <details>
+        <summary>Where do the video clips come from?</summary>
+        <p>Clips are sourced from YouTube — dramas, news, and creators teaching Japanese. Every clip credits its original channel in the app, with a direct link to watch it on YouTube.</p>
+      </details>
+      <details>
+        <summary>Does Chomu show ads or sell my data?</summary>
+        <p>No. Chomu has no ad network and no analytics or tracking SDKs. See our <a href="/privacy">Privacy Policy</a> for the full details on what we collect and why.</p>
+      </details>
+    </div>
+
+    <div class="contact-card">
+      <div>
+        <h2>Still stuck?</h2>
+        <p>We typically reply within a couple of days.</p>
+      </div>
+      <a class="btn" href="mailto:anvelopers368@gmail.com">anvelopers368@gmail.com</a>
+    </div>
+  </main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">
+        <img src="/logo.png" alt="Chomu">
+        <span>Chomu</span>
+      </div>
+      <div class="foot-jp">学べば学ぶほど、話せるようになる。</div>
+    </div>
+    <div class="foot-links">
+      <div class="foot-col">
+        <span class="h">Product</span>
+        <a href="/#tap">How it works</a>
+        <a href="#">Download</a>
+      </div>
+      <div class="foot-col">
+        <span class="h">Legal</span>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+      <div class="foot-col">
+        <span class="h">Contact</span>
+        <a href="mailto:anvelopers368@gmail.com">anvelopers368@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 CHOMU</span>
+    <div class="foot-support">
+      <span class="label">Support</span>
+      <a href="mailto:anvelopers368@gmail.com">anvelopers368@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/site.js"></script>
+</body>
+</html>
